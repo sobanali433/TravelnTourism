@@ -22,8 +22,8 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body id="top">
@@ -186,48 +186,6 @@
 
 
 
-      <!-- 
-        - #TOUR SEARCH
-      -->
-
-        <!-- <section class="tour-search">
-          <div class="container">
-
-            <form action="" class="tour-search-form">
-
-              <div class="input-wrapper">
-                <label for="destination" class="input-label">Search Destination*</label>
-
-                <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
-                  class="input-field">
-              </div>
-
-              <div class="input-wrapper">
-                <label for="people" class="input-label">Pax Number*</label>
-
-                <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
-              </div>
-
-              <div class="input-wrapper">
-                <label for="checkin" class="input-label">Checkin Date*</label>
-
-                <input type="date" name="checkin" id="checkin" required class="input-field">
-              </div>
-
-              <div class="input-wrapper">
-                <label for="checkout" class="input-label">Checkout Date*</label>
-
-                <input type="date" name="checkout" id="checkout" required class="input-field">
-              </div>
-
-              <button type="submit" class="btn btn-secondary">Inquire now</button>
-
-            </form>
-
-          </div>
-        </section>
-
- -->
 <section class="tour-search">
   <div class="container">
     <form class="tour-search-form">
@@ -265,10 +223,23 @@
           <option>ON BUDGET</option>
         </select>
       </div>
-     <div class="input-wrapper">
-      <button type="" class="btn-search">FIND NOW</button>
-     </div>
+     <!-- <div class="input-wrapper">
+      <button type="#" class="btn-search">FIND NOW</button>
+     </div> -->
       
+     <div class="input-wrapper">
+    <a href="#myModal" class="btn-search">FIND NOW</a>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+
+        <h2>Hello there <i class="fa-solid fa-code"></i></h2>
+        <p>Backend development in progress soon we meet <i class="fa-solid fa-people-group"></i>.</p>
+    </div>
+</div>
 
     </form>
   </div>
@@ -677,49 +648,41 @@
           </p>
 
           <ul class="gallery-list">
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
-              </figure>
+            <!-- //start -->
+                    <li class="gallery-item">
+              <div class="gallery-image">
+            <div>
+             <figure><img src="./assets/images/gallery-2.jpg" /></figure>
+            </li>
+       
+       <li class="gallery-item">
+              <div class="gallery-image">
+            <div>
+             <figure><img src="./assets/images/gallery-2.jpg" /></figure>
             </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
-              </figure>
+       <li class="gallery-item">
+              <div class="gallery-image">
+            <div>
+             <figure><img src="./assets/images/gallery-3.jpg" /></figure>
             </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
-              </figure>
+              
+       <li class="gallery-item">
+              <div class="gallery-image">
+            <div>
+             <figure><img src="./assets/images/gallery-4.jpg" /></figure>
             </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
-              </figure>
+            
+       <li class="gallery-item">
+              <div class="gallery-image">
+            <div>
+             <figure><img src="./assets/images/gallery-5.jpg" /></figure>
             </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
           </ul>
-
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
 
       <section class="cta" id="contact">
         <div class="container">
@@ -851,8 +814,6 @@
     </div>
 
   </footer>
-
-
 
 
 
