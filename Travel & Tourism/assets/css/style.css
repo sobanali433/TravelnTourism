@@ -1,26 +1,6 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
-
-  /**
-   * colors
-   */
-
-  --united-nations-blue: #023B68;
+   --united-nations-blue: #023B68;
   --bright-navy-blue:#023B68;
   --spanish-gray: hsl(0, 0%, 60%);
   --black-coral: hsl(225, 8%, 42%);
@@ -34,14 +14,8 @@
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 25%);
   --jet: hsl(0, 0%, 20%);
-
-  /**
-   * typography
-   */
-
   --ff-poppins: "Poppins", sans-serif;
   --ff-montserrat: "Montserrat", sans-serif;
-
   --fs-1: calc(20px + 3.5vw);
   --fs-2: calc(18px + 1.6vw);
   --fs-3: calc(16px + 0.45vw);
@@ -50,40 +24,15 @@
   --fs-6: 13px;
   --fs-7: 12px;
   --fs-8: 11px;
-
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
   --fw-800: 800;
-
-  /**
-   * transition
-   */
-
   --transition: 0.25s ease-in-out;
-
-  /**
-   * spacing
-   */
-
   --section-padding: 60px;
-
-  /**
-   * border-radius
-   */
-
   --radius-15: 15px;
   --radius-25: 25px;
-
 }
-
-
-
-
-
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -122,14 +71,6 @@ html {
 }
 
 body { background: var(--white); }
-
-
-
-
-
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -199,14 +140,6 @@ body { background: var(--white); }
   color: var(--black-coral);
   font-size: var(--fs-5);
 }
-
-
-
-
-
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
 
 .header {
   position: absolute;
@@ -366,14 +299,6 @@ body { background: var(--white); }
   pointer-events: all;
 }
 
-
-
-
-
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
-
 .hero {
   background-image: url("../images/hero-banner.jpg");
   background-repeat: no-repeat;
@@ -410,13 +335,6 @@ body { background: var(--white); }
 .hero:hover {
   transform: scale(1.05);
 }
-
-
-
-/*-----------------------------------*\
- * #TOUR SEARCH
-\*-----------------------------------*/
-
 
 .tour-search {
   background: var(--bright-navy-blue);
@@ -455,8 +373,6 @@ body { background: var(--white); }
   margin-top: 35px;
 }
 
-
-  /* ============== */
 .tour-search-form {
   display: flex;
   align-items: stretch;
@@ -478,19 +394,16 @@ body { background: var(--white); }
   background: #fff;
 }
 
-/* Last field no border */
 .input-wrapper:last-of-type {
   border-right: none;
 }
 
-/* Labels */
 .input-label {
   font-size: 12px;
   color: #777;
   margin-bottom: 4px;
 }
 
-/* Inputs + selects */
 .input-field {
   border: none;
   outline: none;
@@ -506,6 +419,87 @@ body { background: var(--white); }
     text-decoration:none;
     border-radius:5px;
 }
+.btn-header
+{
+     display: inline-block; 
+    padding: 10px 30px;
+    background: #0d3b67;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+.btn-header:hover
+{
+     display: inline-block; 
+    padding: 10px 30px;
+    background: #fff;
+    color: #0d3b67;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    transition: background 0.10s ease;
+}
+
+.cta-content {
+  flex: 0 0 60%;
+}
+
+.cta-image {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+.btn-search-contact
+{
+   display: inline-block; 
+    padding: 8px 110px;
+    background: #0d3b67;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+  }
+  .btn-search-contact:hover {
+    display: inline-block;
+    padding: 8px 110;
+    background: #fff;
+    color: #0d3b67;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;}
+
+    .btn-search-footer {
+    display: inline-block;
+    padding: 10px 118px;
+    background: #0d3b67;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;}
+
+    .btn-search-footer:hover {
+    display: inline-block;
+    padding: 10px 118px;
+    background: #fff;
+    color: #0d3b67;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;}
 
 .modal{
     position:fixed;
@@ -543,7 +537,6 @@ body { background: var(--white); }
     font-size:24px;
     color:#fff;
 }
-/* Button */
 .btn-search {
   background:#0d3b67;
   color: #fff;
@@ -561,7 +554,6 @@ body { background: var(--white); }
   border: 2px solid #0d3b67;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .tour-search-form {
     flex-direction: column;
@@ -578,18 +570,6 @@ body { background: var(--white); }
   }
 }
 
-
-
-
-
- 
-
-  /* ============== */
-
-
-/*-----------------------------------*\
- * #POPULAR
-\*-----------------------------------*/
 .popular-card {
   transition: transform 0.4s ease;
 }
@@ -624,7 +604,6 @@ body { background: var(--white); }
   transform: scale(1.1);
 }
 
-/* =========== */
 .popular { padding-block: var(--section-padding); }
 
 .popular-list,
@@ -673,7 +652,7 @@ body { background: var(--white); }
 }
 
 .popular-card .card-subtitle {
-  color: var(--blue-ncs);
+  color: #023B68;
   font-size: var(--fs-6);
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -684,15 +663,6 @@ body { background: var(--white); }
 .popular-card :is(.card-subtitle, .card-title) > a { color: inherit; }
 
 .popular .btn { margin-inline: auto; }
-
-
-
-
-
-/*-----------------------------------*\
- * #PACKAGE
-\*-----------------------------------*/
-
 .package { padding-block: var(--section-padding); }
 
 .package-list { margin-bottom: 40px; }
@@ -804,13 +774,6 @@ body { background: var(--white); }
 .package .btn { margin-inline: auto; }
 
 
-
-
-
-/*-----------------------------------*\
- * #GALLERY
-\*-----------------------------------*/
-
 .gallery { padding-block: var(--section-padding); }
 
 .gallery-list {
@@ -833,15 +796,6 @@ body { background: var(--white); }
   height: 100%;
   object-fit: cover;
 }
-
-
-
-
-
-/*-----------------------------------*\
- * #CTA
-\*-----------------------------------*/
-
 .cta {
   background: var(--bright-navy-blue);
   padding-block: var(--section-padding);
@@ -850,14 +804,6 @@ body { background: var(--white); }
 .cta :is(.section-subtitle, .section-title, .section-text) { color: var(--white); }
 
 .cta .section-text { font-size: var(--fs-5); }
-
-
-
-
-
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
 
 .footer-top {
   background: var(--gunmetal);
@@ -982,15 +928,6 @@ address {
 }
 
 .footer-bottom-link:is(:hover, :focus) { color: var(--white); }
-
-
-
-
-
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
-
 .go-top {
   position: fixed;
   bottom: 15px;
@@ -1019,17 +956,6 @@ address {
 .go-top:is(:hover, :focus) { opacity: 1; }
 
 
-
-
-
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 580px screen
- */
-
 @media (min-width: 580px) {
 
   /**
@@ -1055,11 +981,6 @@ address {
   .card-text { --fs-5: 15px; }
 
 
-
-  /**
-   * HEADER
-   */
-
   .header { padding-top: 83px; }
 
   .helpline-box .icon-box { padding: 14px; }
@@ -1076,11 +997,6 @@ address {
   }
 
 
-
-  /**
-   * HERO
-   */
-
   .hero {
     min-height: 800px;
     padding-top: 85px;
@@ -1089,13 +1005,6 @@ address {
   .hero-text { --fs-5: 15px; }
 
   .btn-group { gap: 20px; }
-
-
-
-  /**
-   * TOUR SEARCH
-   */
-
   .tour-search-form {
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
@@ -1105,27 +1014,12 @@ address {
 
   .tour-search-form .input-wrapper { margin-bottom: 0; }
 
-  /* .tour-search-form .input-field { padding: 16px 20px; } */
-
   .tour-search .btn {
     grid-column: span 2;
     margin-top: 20px;
   }
 
-
-
-  /**
-   * POPULAR
-   */
-
   .popular-card .card-content { right: auto; }
-
-
-
-  /**
-   * FOOTER
-   */
-
   .footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1139,38 +1033,12 @@ address {
   .copyright { margin-bottom: 0; }
 
   .footer-bottom-list { justify-content: flex-end; }
-
 }
 
-
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-5: 15px;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 800px; }
 
@@ -1178,12 +1046,6 @@ address {
     max-width: 60ch;
     margin-inline: auto;
   }
-
-
-
-  /**
-   * HEADER
-   */
 
   .helpline-box {
     display: flex;
@@ -1201,11 +1063,6 @@ address {
   .social-list { gap: 10px; }
 
 
-
-  /**
-   * POPULAR
-   */
-
   .popular-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1217,11 +1074,6 @@ address {
 
   .popular-card .card-content { right: 20px; }
 
-
-
-  /**
-   * PACKAGE
-   */
 
   .package-list { margin-bottom: 50px; }
 
@@ -1244,11 +1096,6 @@ address {
   .package-card .card-price .wrapper { margin-bottom: 15px; }
 
 
-
-  /**
-   * GALLERY
-   */
-
   .gallery { padding-bottom: calc(var(--section-padding * 2)); }
 
   .gallery-list {
@@ -1257,12 +1104,6 @@ address {
   }
 
   .gallery-image { border-radius: var(--radius-25); }
-
-
-
-  /**
-   * CTA
-   */
 
   .cta .container {
     display: flex;
@@ -1273,47 +1114,20 @@ address {
   .cta-content { width: calc(100% - 225px); }
 
   .cta .section-text { margin-inline: 0; }
-
-
-
-  /**
-   * FOOTER
-   */
-
   .form-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
   }
-
   .footer-form .input-field { margin-bottom: 0; }
-
   .footer-form .btn { width: max-content; }
-
 }
-
-
-
-
-
-/**
- * responsive for larger than 992px screen
- */
 
 @media (min-width: 992px) {
 
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 1050px; }
 
-
-
-  /**
-   * HEADER
-   */
 
   .header.active .header-top {
     position: unset;
@@ -1367,20 +1181,7 @@ address {
   }
 
   .overlay { display: none; }
-
-
-
-  /**
-   * HERO
-   */
-
   .hero .container { max-width: 740px; }
-
-
-
-  /**
-   * TOUR SEARCH
-   */
 
   .tour-search-form { grid-template-columns: repeat(5, 1fr); }
 
@@ -1391,36 +1192,15 @@ address {
   }
 
 
-
-  /**
-   * POPULAR
-   */
-
   .popular-list { grid-template-columns: repeat(3, 1fr); }
 
-
-
-  /**
-   * PACKAGE
-   */
 
   .meta-box { --fs-8: 13px; }
 
   .meta-box > ion-icon { font-size: 15px; }
 
-
-
-  /**
-   * CTA 
-   */
-
   .cta .section-title { max-width: 25ch; }
 
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container {
     grid-template-columns: repeat(3, 1fr);
@@ -1436,34 +1216,15 @@ address {
 }
 
 
-
-
-
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * spacing
-     */
-
+    
     --section-padding: 100px;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1180px; }
 }
@@ -1479,7 +1240,7 @@ address {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-/* 
+/* test case erorr in css
 body {
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
